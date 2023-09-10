@@ -31,3 +31,13 @@ def traversing(arr):
 arr = array("d", [1, 2 ,3 ])
 print(traversing(arr))  
 #Time Complexity = O(n) and the Space Complexity = O(1)
+
+#***********************************#
+import array
+array2 = array.array('i',[1,2,3,4,5,6,7,8])
+def AcessingElement(array2,index):
+    if(index>=len(array2)):
+        print("There is no element in the given index or index doesn't exist")
+    else:
+        print(array2[index])
+print(AcessingElement(array2,6))
