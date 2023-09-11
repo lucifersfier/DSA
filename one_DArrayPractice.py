@@ -79,7 +79,7 @@ print(my_array[:-1])
 print(my_array[1:])
 print(my_array[-1:])
 
-
+#************************************#g
 
 
 
