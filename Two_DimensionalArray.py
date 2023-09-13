@@ -37,7 +37,8 @@ def Serarching(array,element):
     for i in range(len(array)):
         for j in range(len(array[0])):
             if(array[i][j]==element):
-                print("found"+"",i,j)
+                print("found"+" at index "+str(i)+" "+str(j))
+    return "The Element is not found"
 
                 
 Serarching(tda,13)
