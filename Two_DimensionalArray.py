@@ -41,9 +41,18 @@ def Serarching(array,element):
     return "The Element is not found"
 
                 
-Serarching(tda,13)
+Serarching(tda,13) #Time Complexity = O(mn) & Space Complexity = O(1)
 
 #****************************************#
+# we aren't straight away deleting the first column from the array we are  
+#copying the orignal data without deleted column into a new array
+#Time & Space Complexity = O(mn)
+newtda = np.delete(tda,0,axis=0)
+nntda = np.delete(tda,0,axis=1)
+print("Deleting the row or column in an array/matrix")
+print(newtda)
+print(nntda)
+
 
 
 
