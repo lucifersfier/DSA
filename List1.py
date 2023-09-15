@@ -18,3 +18,30 @@ and time complexity for append operation is O(1) and for both the case space com
 
 '''time and space complexity for extend method is depend on number of elements on the list therefore we can say that 
 time and space complexity will be O(n)'''   
+
+#DELETING AN ELEMENT FROM THE LIST 
+#We can delete elements from any position in our lists using pop keyword
+
+mylist1.pop(1) #if you provide index it will delete the index element otherwise it will delete the last index element
+print(mylist1)
+mylist1.pop()
+print(mylist1) #last element deleted
+del mylist[2]
+print(mylist)
+print("deleting element using slicing in del method")
+del mylist[:3]
+print(mylist)
+
+#remove method is useful when you know the elemeent itself
+mylist.remove("a")
+mylist.remove("c")
+mylist.remove("d")
+mylist.remove("f")
+print(mylist)
+
+'''if we don not use the paramenter in pop() method then time complexity will be O(1)
+otherwise time complexitry will be O(n) & Space complexity for all the three method is O(1)'''
+
+'''tIME COMPLEXITY FOR DEL() method is O(n)   '''
+'''Remove method Time complexity is O(n)'''
+
