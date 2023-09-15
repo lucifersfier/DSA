@@ -64,3 +64,19 @@ print(Linear_Search(list1,target))
 
 #Linear_Search time Complexity is O(n)
 #Space_Complxity for linear search is O(1)
+
+#LIST OPERATIONS AND FUNCTIONS---->
+print("CONCATENATE (+) OPERATOR") 
+l1=[1,2,3]
+l2=[1,2,3,5,6,7,8,9,'a']
+l3=l1+l2
+print(l3)
+
+print("list functions")
+count=0
+total=0
+newl = [1,2,3,4,5,6,78,98]
+for i in range(len(newl)):
+    total = total+newl[i]
+    count=count+1
+print(total/count)
