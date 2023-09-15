@@ -44,4 +44,23 @@ otherwise time complexitry will be O(n) & Space complexity for all the three met
 
 '''tIME COMPLEXITY FOR DEL() method is O(n)   '''
 '''Remove method Time complexity is O(n)'''
+#Searching an Element in the list
 
+list1 = [1,2,3,4,9,11,12,34,43,32,87]
+target = 100
+if target in list1:
+    print(f"{target} is in the list")
+else:
+    print(f"{target} is not in the list")
+    
+#when you are searching an element using in operator time complexity = O(n)
+def Linear_Search(list,target):
+    for i, value in enumerate(list):
+        if value==target:
+            return i
+    return -1
+print("Linear Search Result is")
+print(Linear_Search(list1,target))
+
+#Linear_Search time Complexity is O(n)
+#Space_Complxity for linear search is O(1)
