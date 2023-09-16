@@ -80,3 +80,57 @@ for i in range(len(newl)):
     total = total+newl[i]
     count=count+1
 print(total/count)
+
+#******************************#
+
+a='spam'
+b=list(a)
+print(b)
+
+x='Nittyansh Srivastava Software Developer Engineer'
+y=x.split()
+print(y)
+
+x='Nittyansh-Srivastava-Software-Developer-Engineer'
+delimiter = '-'
+y=x.split(delimiter)
+print(y)
+print(delimiter.join(y))
+
+#************************************************#
+
+#LIST COMPREHENSION
+print("Example of list comprehension")
+prev_list = [1,2,3,45,6,6]
+new_list = [i*2 for i in prev_list]
+print(new_list)
+
+lang = "NIttyansh Srivsatava Software developer engineer"
+nlang = [letter for letter in lang]
+print(nlang)
+
+################################################
+arr = [1, 2, 3, 4, 5, 6]
+for i in range(1, 6):
+    arr[i - 1] = arr[i]
+for i in range(0, 6): 
+    print(arr[i], end = " ")
+'''a=[1,2,3,4,5,6,7,8,9]
+a[::2]=10,20,30,40,50,60
+print(a)'''
+
+a=[1,2,3,4,5,6,7,8,9]
+print(a[::2])
+
+a=[1,2,3,4,5]
+print(a[3:0:-1])
+data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+def fun(m):
+    v = m[0][0]
+ 
+    for row in m:
+        for element in row:
+            if v < element: v = element
+ 
+    return v
+print(fun(data[0]))
