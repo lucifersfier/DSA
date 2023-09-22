@@ -13,3 +13,4 @@ for i in range(len(l)):
     if(l[i]>avgtemp):
         count=count+1
 print("Number of days when temperature is higher than avg temerature is : ",count)
+#
