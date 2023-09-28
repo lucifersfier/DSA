@@ -73,3 +73,22 @@ in the dictionary then it will not give an error so always make sure to provide 
 # it will show empty dictionary Time and space complexity is O(n) and O(1) 
 '''Time and Space Complexity is O(1)'''
 
+
+#  Dictionary operations / Built in functions
+
+my_dictt = {0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five'}
+print(3  in my_dictt)
+print(9 in my_dictt)
+print(5 not in my_dictt)
+print(5 in my_dictt)
+print('five' in my_dictt) # it works for the keys not for the values thats why it will give false
+print('five' in my_dictt.values()) # but using values() method can help to identify the values in dictionary
+
+#all() function returns true only when we have all keys over here is true
+#any() method returns true if all keys are ture or atleast one key is true otherwise false 
+#sorted() function returns the list of keys in sorted manner 
+
+
+
+
+
