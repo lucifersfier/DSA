@@ -88,7 +88,15 @@ print('five' in my_dictt.values()) # but using values() method can help to ident
 #any() method returns true if all keys are ture or atleast one key is true otherwise false 
 #sorted() function returns the list of keys in sorted manner 
 
+#############************************************##########################
 
+#   DICTIONARY COMPREHENSION
+import random
+cities = ['ghaziabad','raebareli','lucknow','noida','meerut']
+new_dict = {city:random.randint(20,30) for city in cities}
+print(new_dict)
+city_temps = {city:temp for (city,temp) in new_dict.items() if temp>=25}
+print(city_temps)
 
 
 
