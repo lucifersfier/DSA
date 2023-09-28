@@ -44,4 +44,22 @@ print(dict.setdefault('address','ghaziabad'))
 print(dict) 
 print(dict.setdefault('age',23))
 
+# (9) -->> The pop method  removes and returns an element from the dictionary having the given key
+
+print(dict.pop('address','ghaziabad'))
+print(dict)
+print(dict.pop('city','salon'))
+
+# (10) -->> The values method returns a view object that dispalys a list of values in the dictionary 
+
+print(dict.values())
+
+# (11) -->> the update method updates the dictionary with the elements from another dictionary object or from 
+# an iterable of key/value pairs, it adds elements to the dictionaryif the key is not in the dictionary 
+# and if the key is in the dictionary it updates the key value with new value
+
+nedict = {'a':1,'b':2,'c':3}
+dict.update(nedict)
+print(dict) 
+
 
