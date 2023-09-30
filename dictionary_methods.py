@@ -1,3 +1,4 @@
+#Dictionary
 mydict = {'fname': 'nittyansh','lname':'srivastava','age':'22','gender':'male','address':'Delhi'}
 
 # (1) -->> The clear method doesn't take any parameter and it doesn't return any value, it return by default none
