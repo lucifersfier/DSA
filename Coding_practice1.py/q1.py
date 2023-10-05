@@ -10,3 +10,4 @@ print(find_missing(arr,6))
 formula and then subtracts the sum of the numbers in the array to find the missing number.
 The time complexity of this function is O(n) because it iterates through the array once to calculate the
 sum of its elements.'''
+#
