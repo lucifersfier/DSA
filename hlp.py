@@ -7,20 +7,19 @@ sequence of integers on the first line, separated by space
 
 S on the second line'''
 
-def min_subsequence_length(sequence, S):
-    n = len(sequence)
+def min_subsequence_length(arr, Summ):
+    x = len(arr)
     min_length = float()
 
-    for i in range(n):
+    for i in range(x):
         current_sum = 0
-        for j in range(i, n):
-            current_sum += sequence[j]
-            if current_sum >= S:
+        for j in range(i, x):
+            current_sum += arr[j]
+            if current_sum >= Summ:
                 min_length = min(min_length, j - i + 1)
 
     return min_length if min_length != float() else 0
-sequence = list(map(int, input().split()))
-S = int(input())
-
-result = min_subsequence_length(sequence, S)
+arr = list(map(int, input().split()))
+Summ = int(input())
+result = min_subsequence_length(arr, Summ)
 print(result)
