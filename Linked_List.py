@@ -89,8 +89,59 @@ print(new_linked_list.length)
 3) - At the end of the linked list
 '''
 
+###################### INSERT AN ELEMENT AT THE END OF SINGLY LINKED LIST  ############################
 
+'''
+first create a new node
+for that it have value and next pointer and in that case next pointer is null
+'''
+#next step
+'''
+update the last node's next pointer to point to the new node
+'''
+#last step 
+'''
+update the tail to pint to the new node
+'''
+#edge cases
+'''
+Ques - if there is not any element in the linked list and we try to call the append method to insert a new node at the end of the
+       linked list, what will happen ?
+Ans -  create a new node and then update head and tail to new node. 
+'''        
+#Linked List class for this empty singly linked list is going to be like this.
+
+class Linked_List:
+       
+       def __init__(self):  #constructor
+              self.head=None
+              self.tail=None
+              self.length=0
+              
+      # create the append method inside this linked list class
+       def append(self,value): #this append method implies to the current instance of this object and then it will take value
+          '''how can we identify the linked list is empty or not 
+          if head pointer points to none in this case it means that it is empty, or if the length attribute that we have declared is zero
+          then in this case list is empty'''
+          new_node = Node(value)
+          if self.head is None:
+             self.head = new_node
+             self.tail = new_node
+          else:
+             self.tail.next = new_node
+             self.tail = new_node
+                 
+          self.length += 1 
+      
+newLinked_list = Linked_List()
+newLinked_list.append(10)
+newLinked_list.append(20)
+print(newLinked_list.head.value)
+print(newLinked_list.length)          
           
+          
+          
+              
       
        
                
