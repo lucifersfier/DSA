@@ -52,7 +52,42 @@ print(new_node)   # Showing the location in the memory as output
 
 ###################### LINKED LIST CONSTRUCTOR -->> CREATION OF SINGLY LINKED LIST ############################
 
+# class LinkedList:
+#        def __init__(self,value):
+#               new_node = Node(value)
+#               self.head = new_node
+#               self.tail = new_node
+              
+#class LinkedList:
+#      def __init__(self):
+#         self.head = None
+#        self.tail = None #Empty linked list 
+         
+class Node:
+   def __init__(self,value):
+      self.value = value
+      self.next = None
+      
+class LinkedList:
+   def __init__(self,value):
+          new_node = Node(value)
+          self.head = new_node
+          self.tail = new_node
+          self.length = 1
+          
+new_linked_list = LinkedList(10)
+print(new_linked_list.head.value)
+print(new_linked_list.length)
+
+'''Time & Space complexity for creating the linked list is O(1)'''
 
 
+
+
+          
+      
+       
+               
+                     
 
    
