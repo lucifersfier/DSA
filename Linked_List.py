@@ -117,7 +117,16 @@ class Linked_List:
               self.head=None
               self.tail=None
               self.length=0
-              
+       def __str__(self):
+              temp_node = self.head
+              result = ''
+              while temp_node is not None:
+                     result += str(temp_node.value)
+                     if temp_node.next is not None:
+                        result += ' -> '
+                     temp_node = temp_node.next
+              return result
+           
       # create the append method inside this linked list class
        def append(self,value): #this append method implies to the current instance of this object and then it will take value
           '''how can we identify the linked list is empty or not 
@@ -132,17 +141,59 @@ class Linked_List:
              self.tail = new_node
                  
           self.length += 1 
-      
+          
+
+    
 newLinked_list = Linked_List()
 newLinked_list.append(10)
 newLinked_list.append(20)
-print(newLinked_list.head.value)
-print(newLinked_list.length)          
+        
           
-          
+###################### PRINT LINKED_LIST  __str__  ############################          
+
+'''Now for printing Linked_list we are going to use __str__ method in python '''
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class Linked_List:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
+
+    def __str__(self):
+        temp_node = self.head
+        result = ''
+        while temp_node is not None:
+            result += str(temp_node.value)
+            if temp_node.next is not None:
+                result += ' -> '
+            temp_node = temp_node.next
+        return result
+
+    def append(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            self.tail.next = new_node
+            self.tail = new_node
+        self.length += 1
+
+newLinked = Linked_List()
+newLinked.append(10)
+newLinked.append(20)
+print(newLinked)
+
+    
+ 
+             
           
               
-      
+
        
                
                      
