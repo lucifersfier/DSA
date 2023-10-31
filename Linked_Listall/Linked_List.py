@@ -188,7 +188,9 @@ newLinked.append(10)
 newLinked.append(20)
 print(newLinked)
 
-    
+
+
+
  
              
           
