@@ -5,7 +5,6 @@ yourtup=('a','b','c','d','e')
 tup=tuple('123456')
 '''print(mytup)
 print(yourtup)
-print(tup)
 '''
 #(1) -->> Concatenation
 
